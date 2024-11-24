@@ -60,7 +60,7 @@ SOCIALACCOUNT_LOGIN_ON_GET = True
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",  
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -72,7 +72,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "TaskManagement.urls"
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 
 TEMPLATES = [
@@ -145,10 +145,10 @@ USE_TZ = True
 
 LOGIN_URL = "/"
 
-STATIC_URL = "/static/"
+STATIC_URL = "static/"
 
 # On Vercel, static files are usually stored in the 'static' folder
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_ROOT = BASE_DIR / "static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
