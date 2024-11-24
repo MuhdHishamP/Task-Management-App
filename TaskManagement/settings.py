@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-p*n^e7ozjb2vhz-^z)tbh)fj#4t!%z2etgw4(9c0v7xy!lt+_q"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = "False"
+DEBUG = "True"
 ALLOWED_HOSTS = [".vercel.app", "localhost", "127.0.0.1"]
 
 # Application definition
@@ -102,7 +102,7 @@ DATABASES = {
     }
 }
 
-DATABASES["default"] = dj_database_url.parse(database_url)
+DATABASES["default"] = dj_database_url.parse("database_url")
 
 
 # Password validation
