@@ -2,6 +2,9 @@
 
 This is a web application built using Django that enables users to manage personal tasks after logging in with their Google account. The app provides features for task management, admin configuration, and user invitation via email.
 
+You can access the live version of the app here: [Task Management App](https://task-management-app-kappa-bay.vercel.app/)
+
+
 ## Features
 
 ### 1. Google Authentication
