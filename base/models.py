@@ -27,7 +27,7 @@ class UserInvitation(models.Model):
         return self.email
     
     def send_invitation(self):
-        invitation_link = "https://wellfound.com/jobs"
+        invitation_link = "https://task-management-app-kappa-bay.vercel.app/"
         
         send_mail(
             subject='Invitation to use task app',
